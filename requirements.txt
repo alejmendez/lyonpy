@@ -1,0 +1,12 @@
+argon2-cffi==20.1.0
+Django==3.1.7
+django-environ==0.4.5
+django-redis==4.12.1
+psycopg2==2.8.6
+python-slugify==4.0.1
+celery==5.0.5
+flower==0.9.5
+Pillow==8.1.2
+pytz==2021.1
+redis==3.5.3
+whitenoise==5.2.0
