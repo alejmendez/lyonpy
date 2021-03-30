@@ -27,5 +27,5 @@ whitenoise==5.2.0
 tornado>=6.0.4
 redis>=3.5.3, < 4
 django-redis==4.12.1
-celery==5.0.5
-flower==0.9.5
+celery==4.4.7
+flower==0.9.7
