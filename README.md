@@ -14,12 +14,12 @@ import ipdb; ipdb.set_trace()
 Variables de entorno (COMPOSE_FILE)
 Para Windows
 ```sh
-export COMPOSE_FILE=local.yml
+set COMPOSE_FILE=local.yml
 ```
 
 Para Linux
 ```sh
-set COMPOSE_FILE=local.yml
+export COMPOSE_FILE=local.yml
 ```
 
 Para construir las imagenes
@@ -45,12 +45,14 @@ $ docker-compose down
 Para ejecutar un comando
 ```sh
 $ docker-compose run --rm django python manage.py createsuperuser
+$ docker-compose run --rm django python manage.py makemigrations
+$ docker-compose run --rm django python manage.py migrate
 ```
 
 Para matar un proceso
 ```sh
 $ docker rm -f <ID>
-$ docker rm -f lionpy_django_1
+$ docker rm -f lyonpy_django_1
 ```
 
 Para correr por separado el proceso de django
